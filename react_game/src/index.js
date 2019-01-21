@@ -10,12 +10,21 @@ import * as serviceWorker from './serviceWorker';
 // Learn more about service workers: http://bit.ly/CRA-PWA
 
 class Square extends React.Component {
-  render() {
-    return (
-      <button className="square">
-        {this.props.value}
-      </button>
-    );
+    constructor(props) {
+        super(props);
+        this.state = {
+            value: null,
+        };
+    }
+    render() {
+        return (
+            <button 
+                className="square" 
+                onClick={() => this.setState({value:'X'}) }
+            >
+                {this.state.value}
+            </button>
+        );
   }
 }
 
