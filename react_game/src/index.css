@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
+
 body {
-  font: 14px "Century Gothic", Futura, sans-serif;
   margin: 20px;
+  background-image: url('./grey-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-ol, ul {
-  padding-left: 30px;
-}
+/*ol, ul {*/
+/*  padding-left: 30px;*/
+/*}*/
 
 .board-row:after {
   clear: both;
@@ -14,23 +19,25 @@ ol, ul {
 }
 
 .status {
-  margin-bottom: 15px;
+  margin-bottom: 1vw;
   font-size: 2vw;
 }
 
 .square {
-  background: #fff;
-  border: 1px solid #999;
+  font-family: 'Major Mono Display', monospace;
+  color:white;
+  background-color: rgba(157, 156, 156, 0.4);
+  border: 0.15vw solid #DBDADA;
   float: left;
-  font-size: 24px;
+  font-size: 2vw;
   font-weight: bold;
-  line-height: 34px;
-  height: 100px;
+  line-height: 3.4vw;
+  height: 10vw;
+  width: 10vw;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 100px;
 }
 
 .square:focus {
@@ -46,6 +53,14 @@ ol, ul {
   flex-direction: row;
 }
 
-.game-info {
-  margin-left: 20px;
+/*.game-info {*/
+/*  margin-left: 20px;*/
+/*}*/
+
+/*---------------colours*/
+.game-style{
+  color:#777778;
+  text-align:center;
+  font-family: 'Major Mono Display', monospace;
+  padding-left: 28.5vw;
 }
